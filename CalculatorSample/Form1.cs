@@ -21,10 +21,7 @@ namespace CalculatorSample
 
         private void btn0_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "0";
-            }
+           
 
             txtBoxValue.Text += "0";
             
@@ -56,10 +53,6 @@ namespace CalculatorSample
 
         private void btn9_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "9";
-            }
             txtBoxValue.Text += "9";
         }
 
@@ -74,37 +67,21 @@ namespace CalculatorSample
 
         private void btn7_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "7";
-            }
             txtBoxValue.Text += "7";
         }
 
         private void btn6_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "6";
-            }
             txtBoxValue.Text += "6";
         }
 
         private void btn5_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "5";
-            }
             txtBoxValue.Text += "5";
         }
 
         private void btn4_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "4";
-            }
             txtBoxValue.Text += "4";
         }
 
@@ -167,30 +144,17 @@ namespace CalculatorSample
 
         private void btn1_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "1";
-            }
-
             txtBoxValue.Text += "1";
             
         }
 
         private void btn3_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "3";
-            }
             txtBoxValue.Text += "3";
         }
 
         private void btn2_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "2";
-            }
             txtBoxValue.Text += "2";
 
         }
