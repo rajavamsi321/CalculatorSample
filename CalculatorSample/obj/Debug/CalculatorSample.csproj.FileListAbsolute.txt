@@ -1,0 +1,10 @@
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\bin\Debug\CalculatorSample.exe.config
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\bin\Debug\CalculatorSample.exe
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\bin\Debug\CalculatorSample.pdb
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.csprojAssemblyReference.cache
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.Form1.resources
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.Properties.Resources.resources
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.csproj.GenerateResource.cache
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.csproj.CoreCompileInputs.cache
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.exe
+C:\Users\pavan\source\repos\CalculatorSample\CalculatorSample\obj\Debug\CalculatorSample.pdb
