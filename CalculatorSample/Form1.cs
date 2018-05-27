@@ -17,7 +17,9 @@ namespace CalculatorSample
         bool minus = false;
         bool multiply = false;
         bool divide = false;
-        int resultValue;
+        bool square = false;
+        bool squareRoot = false;
+        double resultValue;
 
         private void btn0_Click(object sender, EventArgs e)
         {
@@ -45,6 +47,8 @@ namespace CalculatorSample
             minus = false;
             multiply = false;
             divide = false;
+            square = false;
+            squareRoot = false;
             resultValue = Convert.ToInt32(txtBoxValue.Text);
             txtBoxValue.Text = "";
                
@@ -58,10 +62,6 @@ namespace CalculatorSample
 
         private void btn8_Click(object sender, EventArgs e)
         {
-            if (txtBoxValue.Text == "0")
-            {
-                txtBoxValue.Text = "8";
-            }
             txtBoxValue.Text += "8";
         }
 
@@ -115,6 +115,18 @@ namespace CalculatorSample
                 txtBoxValue.Text = resultValue.ToString();
 
             }
+            else if (square == true)
+            {
+                resultValue = Convert.ToInt32(Math.Pow(resultValue, 2));
+                txtBoxValue.Text = resultValue.ToString();
+
+            }
+            else if (squareRoot == true)
+            {
+                resultValue = Math.Sqrt(resultValue);
+                txtBoxValue.Text = resultValue.ToString("n2");
+
+            }
 
 
 
@@ -126,6 +138,8 @@ namespace CalculatorSample
             plus = false;
             multiply = false;
             divide = false;
+            square = false;
+            squareRoot = false;
             resultValue = Convert.ToInt32(txtBoxValue.Text);
             txtBoxValue.Text = "";
         }
@@ -137,6 +151,8 @@ namespace CalculatorSample
             plus = false;
             minus = false;
             divide = false;
+            square = false;
+            squareRoot = false;
             resultValue = Convert.ToInt32(txtBoxValue.Text);
             txtBoxValue.Text = "";
 
@@ -145,7 +161,6 @@ namespace CalculatorSample
         private void btn1_Click(object sender, EventArgs e)
         {
             txtBoxValue.Text += "1";
-            
         }
 
         private void btn3_Click(object sender, EventArgs e)
@@ -165,6 +180,8 @@ namespace CalculatorSample
             plus = false;
             minus = false;
             multiply = false;
+            square = false;
+            squareRoot = false;
             resultValue = Convert.ToInt32(txtBoxValue.Text);
             txtBoxValue.Text = "";
                 
@@ -174,6 +191,30 @@ namespace CalculatorSample
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtBoxValue.Text = string.Empty;
+        }
+
+        private void btnSquare_Click(object sender, EventArgs e)
+        {
+            square = true;
+            plus = false;
+            minus = false;
+            multiply = false;
+            divide = false;
+            squareRoot = false;
+            resultValue = Convert.ToInt32(txtBoxValue.Text);
+            txtBoxValue.Text = "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            squareRoot = true;
+            plus = false;
+            minus = false;
+            multiply = false;
+            divide = false;
+            square= false;
+            resultValue = Convert.ToInt32(txtBoxValue.Text);
+            txtBoxValue.Text = "";
         }
     }
 }

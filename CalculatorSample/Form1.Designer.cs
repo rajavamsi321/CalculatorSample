@@ -39,6 +39,9 @@
             this.btn9 = new System.Windows.Forms.Button();
             this.btn0 = new System.Windows.Forms.Button();
             this.gBox1 = new System.Windows.Forms.GroupBox();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnSquare = new System.Windows.Forms.Button();
             this.btnEqualTo = new System.Windows.Forms.Button();
             this.btnPoint = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
@@ -46,7 +49,6 @@
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
             this.txtBoxValue = new System.Windows.Forms.TextBox();
-            this.btnClear = new System.Windows.Forms.Button();
             this.gBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -152,6 +154,9 @@
             // 
             // gBox1
             // 
+            this.gBox1.Controls.Add(this.btnClear);
+            this.gBox1.Controls.Add(this.button2);
+            this.gBox1.Controls.Add(this.btnSquare);
             this.gBox1.Controls.Add(this.btnEqualTo);
             this.gBox1.Controls.Add(this.btnPoint);
             this.gBox1.Controls.Add(this.btnDivision);
@@ -171,10 +176,40 @@
             this.gBox1.ForeColor = System.Drawing.Color.Maroon;
             this.gBox1.Location = new System.Drawing.Point(172, 161);
             this.gBox1.Name = "gBox1";
-            this.gBox1.Size = new System.Drawing.Size(259, 187);
+            this.gBox1.Size = new System.Drawing.Size(274, 235);
             this.gBox1.TabIndex = 10;
             this.gBox1.TabStop = false;
             this.gBox1.Text = "Calculator";
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(109, 192);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(56, 27);
+            this.btnClear.TabIndex = 12;
+            this.btnClear.Text = "clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(109, 154);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(69, 27);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "x^1/2";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnSquare
+            // 
+            this.btnSquare.Location = new System.Drawing.Point(52, 154);
+            this.btnSquare.Name = "btnSquare";
+            this.btnSquare.Size = new System.Drawing.Size(51, 27);
+            this.btnSquare.TabIndex = 16;
+            this.btnSquare.Text = "x^2";
+            this.btnSquare.UseVisualStyleBackColor = true;
+            this.btnSquare.Click += new System.EventHandler(this.btnSquare_Click);
             // 
             // btnEqualTo
             // 
@@ -243,22 +278,11 @@
             this.txtBoxValue.Size = new System.Drawing.Size(108, 22);
             this.txtBoxValue.TabIndex = 11;
             // 
-            // btnClear
-            // 
-            this.btnClear.Location = new System.Drawing.Point(488, 339);
-            this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
-            this.btnClear.TabIndex = 12;
-            this.btnClear.Text = "clear";
-            this.btnClear.UseVisualStyleBackColor = true;
-            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.txtBoxValue);
             this.Controls.Add(this.gBox1);
             this.Name = "Form1";
@@ -290,6 +314,8 @@
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.TextBox txtBoxValue;
         private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSquare;
     }
 }
 
