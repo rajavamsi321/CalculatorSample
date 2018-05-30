@@ -154,6 +154,7 @@
             // 
             // gBox1
             // 
+            this.gBox1.BackColor = System.Drawing.SystemColors.Control;
             this.gBox1.Controls.Add(this.btnClear);
             this.gBox1.Controls.Add(this.button2);
             this.gBox1.Controls.Add(this.btnSquare);
@@ -173,6 +174,7 @@
             this.gBox1.Controls.Add(this.btn3);
             this.gBox1.Controls.Add(this.btn2);
             this.gBox1.Controls.Add(this.btn1);
+            this.gBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gBox1.ForeColor = System.Drawing.Color.Maroon;
             this.gBox1.Location = new System.Drawing.Point(172, 161);
             this.gBox1.Name = "gBox1";
@@ -183,9 +185,9 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(109, 192);
+            this.btnClear.Location = new System.Drawing.Point(109, 201);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(56, 27);
+            this.btnClear.Size = new System.Drawing.Size(69, 27);
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "clear";
             this.btnClear.UseVisualStyleBackColor = true;
